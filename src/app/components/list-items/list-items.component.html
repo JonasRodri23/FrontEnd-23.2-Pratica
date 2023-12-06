@@ -1,8 +1,17 @@
-<h1> Questão 2 e 3: Lista de items</h1>
 
+<h1>Questão 2 e 3: list-item</h1>
 <div>
-    <ul>
-        <li *ngFor="let item of items"> {{items}} </li>
-    </ul>
-</div>
-
+    <input type="text" placeholder="Adicionar item" [(ngModel)]="newItem" maxlength="100" (keyup.enter)="addItem()">
+    <button class="adicionar-btn" (click)="addItem()">Adicionar</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let item of items; let i = index" [style.backgroundColor]="item.completed ? 'yellow' : 'transparent'">
+      {{ item.name }}
+        <div class="dale">
+            <button class="delete-btn" (click)="removeItem(i)">delete 🗑️</button>
+            <button class="complete-btn" (click)="completeItem(i)">check ✅</button>
+        </div>
+    </li>
+  </ul>
+  

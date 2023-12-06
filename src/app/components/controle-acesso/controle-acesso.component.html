@@ -1,0 +1,10 @@
+<h1>Questão 5: controle de acesso</h1>
+<div>
+    <button (click)="selecionarTipoUsuario('administrador')">Administrador</button>
+    <button (click)="selecionarTipoUsuario('colaborador')">Colaborador</button>
+    <button (click)="selecionarTipoUsuario('usuario')">Usuário</button>
+  
+    <div *ngIf="permissao">
+        <p>{{permissao}}</p>
+
+</div>

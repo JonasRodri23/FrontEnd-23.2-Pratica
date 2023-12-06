@@ -3,11 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "atividade-pratica-frontend": {
+    "MeuProjetoAngular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "standalone": false
+          "standalone": false,
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          "skipTests": true
         },
         "@schematics/angular:directive": {
           "standalone": false
@@ -23,7 +26,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/atividade-pratica-frontend",
+            "outputPath": "dist/meu-projeto-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "atividade-pratica-frontend:build:production"
+              "buildTarget": "MeuProjetoAngular:build:production"
             },
             "development": {
-              "buildTarget": "atividade-pratica-frontend:build:development"
+              "buildTarget": "MeuProjetoAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "atividade-pratica-frontend:build"
+            "buildTarget": "MeuProjetoAngular:build"
           }
         },
         "test": {
@@ -101,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

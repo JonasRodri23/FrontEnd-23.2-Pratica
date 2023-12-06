@@ -1,0 +1,17 @@
+<div>
+    <h1>Questão 4: form de cadastro</h1>
+    <form>
+        <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input id="email" [(ngModel)]="email" name="email" type="email" required>
+
+    <label for="senha">Senha:</label>
+    <input id="senha" [(ngModel)]="senha" name="senha" type="password" required>
+
+    <button type="button" (click)="cadastrar()">Cadastrar</button>
+    </form>
+
+    <p>{{mensagem}}</p>
+</div>

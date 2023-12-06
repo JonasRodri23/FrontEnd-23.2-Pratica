@@ -1,0 +1,60 @@
+{
+  "alunos" : [
+  {
+    "matricula": 12345,
+    "nome": "Dyelson Motta",
+    "idade": 21,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "POO": 8.5,
+      "Front-end": 9.2,
+      "Back-end": 7.8
+    }
+  },
+  {
+    "matricula": 11545,
+    "nome": "Arthur Victor",
+    "idade": 20,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "POO": 9.5,
+      "Front-end": 9.0,
+      "Back-end": 8.5
+    }
+  },
+  {
+    "matricula": 12785,
+    "nome": "Hugo Ferreira",
+    "idade": 20,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "POO": 8.8,
+      "Front-end": 9.5,
+      "Back-end": 9.8
+    }
+  },
+  {
+    "matricula": 11345,
+    "nome": "Jonas Rodrigues",
+    "idade": 20,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "POO": 9.5,
+      "Front-end": 9.0,
+      "Back-end": 8.5
+    }
+  },
+  {
+    "matricula": 18355,
+    "nome": "Rodrigo Guedes",
+    "idade": 23,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "POO": 8.5,
+      "Front-end": 9.4,
+      "Back-end": 9.8
+    }
+  }
+]
+
+}

@@ -8,3 +8,7 @@
   <app-form-login *ngIf="!autenticado" (login)="fazerLogin($event)"></app-form-login>
   <app-area-logada *ngIf="autenticado" [email]="email" [autenticado]="autenticado"></app-area-logada>
 </div>
+
+<div class="main-content">
+  <app-dados-alunos></app-dados-alunos>
+</div>

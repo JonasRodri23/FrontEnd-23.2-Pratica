@@ -1,0 +1,23 @@
+<!-- dados-alunos.component.html -->
+<h1>Questão 8: Consuma dados de uma fake API.</h1>
+<div>
+  <h2>CIÊNCIAS DA COMPUTAÇÃO | 4NB | 2023.2</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Matrícula</th>
+        <th>Curso</th>
+        <th>Média Global</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos">
+        <td>{{ aluno.nome }}</td>
+        <td>{{ aluno.matricula }}</td>
+        <td>{{ aluno.curso }}</td>
+        <td>{{ calcularMedia(aluno.rendimentoEscolar).toFixed(2) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

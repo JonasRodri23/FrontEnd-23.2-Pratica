@@ -11,6 +11,8 @@ import { AreaLogadaComponent } from './components/area-logada/area-logada.compon
 import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
 import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
+import { DadosAlunosComponent } from './components/dados-alunos/dados-alunos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,10 +26,12 @@ import { FormLoginComponent } from './components/form-login/form-login.component
     ComponenteFilhoComponent,
     ComponentePaiComponent,
     FormLoginComponent,
+    DadosAlunosComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

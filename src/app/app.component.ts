@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'atividade-pratica-frontend';
+  autenticado: boolean = false;
+  email: string = '';
+
+  fazerLogin(event: { email: string, senha: string }) {
+    // Lógica de autenticação (pode ser uma chamada a um serviço, etc.)
+    // Por simplicidade, vamos considerar que o login é bem-sucedido sempre.
+    this.autenticado = true;
+    this.email = event.email;
+  }
 }
